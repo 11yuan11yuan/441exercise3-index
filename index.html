@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grade Calculator</title>
+</head>
+<body>
+
+<script>
+// Prompt the user if they need help to calculate the average score
+var needHelp = prompt("Do you need help to calculate your average score? (yes/no)");
+
+if (needHelp.toLowerCase() === "yes") {
+  var fullName = prompt("Please enter your full name:");
+
+  // Prompt the user to enter grades for each of the four units
+  var grade1 = parseFloat(prompt("Enter grade for unit 1:"));
+  var grade2 = parseFloat(prompt("Enter grade for unit 2:"));
+  var grade3 = parseFloat(prompt("Enter grade for unit 3:"));
+  var grade4 = parseFloat(prompt("Enter grade for unit 4:"));
+
+  // Calculate the total and average scores
+  var totalScore = grade1 + grade2 + grade3 + grade4;
+  var averageScore = totalScore / 4;
+
+  // Output the total and average scores to the console
+  console.log("Total score: " + totalScore);
+  console.log("Average score: " + averageScore);
+
+  // Thank the user for using the program
+  console.log("Thank you for using the program, " + fullName + "!");
+} else {
+  // If the user doesn't need help, encourage them to use the program in the future
+  console.log("No problem, feel free to use the program if you change your mind!");
+}
+
+// My name is Susan(Zhou Jingyuan),NCC ID:223190739
+</script>
+
+</body>
+</html>
